@@ -1,0 +1,49 @@
+
+main .card-component{
+    display: block;
+    background-color: var(--whiteColor);
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.6s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+main .card-component:hover{
+    opacity: 0.5;
+    transition: 0.6s ease-in-out;
+}
+
+main .card-component-header img{
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+main .card-component-header,
+main .card-component-footer{
+    min-width: 100%;
+    color: var(--blueColor);
+}
+
+main .card-component-header{
+    height: 80%;
+    overflow: hidden;
+}
+
+main .card-component-footer{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+main .card-component-footer a{
+    color: var(--blueColor);
+    text-decoration: none;
+    font-weight: bold;
+}

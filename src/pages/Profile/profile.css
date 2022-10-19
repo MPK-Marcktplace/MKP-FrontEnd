@@ -1,0 +1,10 @@
+
+
+main .container-profile .card-image{
+    background-color: var(--transparentDarkColor);
+}
+
+main .container-profile .card-image img{
+    width: 30px;
+    height: 40px;
+}

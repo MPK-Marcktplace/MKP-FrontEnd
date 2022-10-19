@@ -1,0 +1,121 @@
+
+header .bar{
+    position: fixed;
+    left: 0;
+    top: 1%;
+    margin-left: 20px;
+}
+
+header .bar .navbar-header{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 40px;
+    color: var(--whiteColor);
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+header .bar .navbar-header .fa-user{
+    font-size: 15px;
+    background-color: var(--grayColor);
+    border: 4px solid var(--blackColor);
+    color: var(--blackColor);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 3px 15px 3px 8px;
+}
+
+header .bar .navbar-header #btn-x .fa-x{
+    color: var(--blackColor);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+header .bar .navbar-header #btn-x .fa-x:hover{
+    color: var(--shockPinkColor);   
+    transition: 0.6s ease-in-out;
+}
+
+
+header .bar .navbar-title{
+    color: var(--whiteColor);
+    font-weight: bold;
+    margin: 10px 20px 10px 20px;
+}
+
+header .bar #menu,
+header .bar #nav-menu{
+    display: none;
+    transition:0.3s ease-in-out;
+}
+
+header .bar .fa-bars{
+    font-size: 20px;
+    margin: 10px 0 0 0px;
+}
+
+header .bar .fa-bars:hover{
+    cursor: pointer;
+}
+
+header .bar #nav-menu ul li{
+    display: block;
+    justify-content: space-between;
+    line-height: 30px;
+    
+}
+
+header .bar #nav-menu ul li a{
+    text-decoration: none;
+    color: var(--grayColor);
+    font-size: 16px;
+    margin: 10px 20px 10px 20px;
+    transition:0.6s ease-in-out;
+}
+
+header .bar #nav-menu ul li a:hover,
+header .bar #nav-menu ul li:hover a{
+    color: var(--shockPinkColor);
+    font-weight: bold;
+    transition:0.6s ease-in-out;
+}
+
+header .bar #menu:checked + #nav-menu{
+    display: block;
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100vh;
+    min-width: 15vw;
+    z-index: 99999999;
+    text-align: left;
+    background-image: linear-gradient(to right, var(--blackColor) 50%, var(--footer-color-gray) 100%);
+    border-top-right-radius: 4px;
+    animation: menuEffects 0.8s  ease-in;
+}
+
+/*
+*********************************
+******** Parte mobile ***********
+*********************************
+*/
+@media (max-width: 400px){
+
+    header .bar #menu:checked + #nav-menu{
+        left:0;
+        top: 0%;
+        height: 100vh;
+        width: 60vw;
+    }
+}
+
+@keyframes menuEffects{
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.50;}
+    75%{opacity: 0.75;}
+    100%{opacity: 1;}
+}

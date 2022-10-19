@@ -1,0 +1,83 @@
+  
+  main .modal-window{
+    width: 37vw;
+    height: 57vh;
+    min-width: 450px;
+    min-height: 200px;
+    border-radius: 20px;
+    background-color: var(--transparentDarkColor);
+    color: var(--whiteColor);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main .model-window form{
+    display: flex;
+    padding: 10px;
+  }
+  
+  main .modal-window div h1{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  main .modal-window .container-inputs form div{
+    display: inline;
+  }
+  
+  main .modal-window .container-inputs form .short{
+    width: 160px;
+    height: 24px;
+  }
+  
+  main .modal-window .container-inputs form .long{
+    width: 530px;
+    height: 24px;
+  }
+  
+  main .modal-window .container-inputs form div #company{
+    width: 350px;
+  }
+  
+  main .modal-window .container-inputs form div select option,
+  main .modal-window .container-inputs form div input::placeholder{
+    color: var(--whiteColor);
+    text-align: center;
+  }
+  
+  main .modal-window .container-inputs form div input,
+  main .modal-window .container-inputs form div select{
+    margin: 10px;
+    border-radius: 7px;
+    padding-left: 7px;
+    border: 1px solid var(--shockPinkColor);
+    color: var(--whiteColor);
+    background-color: var(--blackColor);
+  }
+  
+  main .modal-window .container-inputs form div select{
+    text-align: center;
+  }
+  
+  main .modal-window .container-inputs form .container-btn{
+    display: block;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  main .modal-window .container-inputs form div button{
+    background-color: var(--darkColor);
+    color: var(--whiteColor);
+    border: 1px solid var(--blueColor);
+    border-radius: 10px;
+    width: 8em;
+    height: 2.4em;
+    margin: 5px;
+    transition: 0.6s ease-in-out;
+  }
+  
+  main .modal-window .container-inputs form div button:hover{
+    background-color: var(--shockPinkColor);
+    color: var(--whiteColor);
+    transition: 0.6s ease-in-out;
+  }

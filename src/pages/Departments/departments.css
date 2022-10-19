@@ -1,0 +1,56 @@
+
+
+main .menuBar,
+main .container-departments{
+    background-color: var(--transparentDarkColor);
+    color: var(--whiteColor);
+    margin: 5px;
+    padding: 10px;
+}
+
+main .menuBar{
+    display: inline-block;
+    text-align: left;
+    left:0;
+    top: 0;
+    width: 12vw;
+    height: 100vh;
+}
+
+main .menuBar ul{
+    list-style: none;
+}
+
+main .menuBar ul li{
+    list-style: none;
+    line-height: 30px;
+}
+
+main .menuBar ul li a{
+    color: var(--grayColor);
+    text-decoration: none;
+    padding-left: 15px;
+    border-radius: 13px;
+    transition: 0.6s ease-in-out;
+}
+
+main .menuBar ul li a:hover{
+    color: var(--shockPinkColor);
+    transition: 0.4s ease-in-out;
+    border-radius: 13px;
+    padding: 6px;
+}
+
+main .menuBar .navbar-title{
+    color: var(--whiteColor);
+    font-weight: bold;
+    padding: 6px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+main .container-departments{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+}

@@ -1,0 +1,104 @@
+  main{
+    min-height: 50vh;
+  }
+  
+  main .container{
+      background-color: var(--transparentDarkColor);
+      color: var(--whiteColor);
+      border-radius: 20px;
+      width: 17vw;
+      height: 30vh;
+      padding: 20px;
+  }
+  
+  main .container .container-title,
+  main .container .conetainer-input,
+  main .container .container-btn{
+      margin: 25px;
+      text-align: center;
+  }
+  
+  main .container .container-input div,
+  main .container .container-input div label{
+      margin: 10px;
+  }
+  
+  main .container .container-input input{
+      border: 1px solid var(--blueColor);
+      box-shadow: inset 0px 0px 6px;
+      border-radius: 8px;
+      padding: 6px;
+      outline: none;
+      width: 10vw;
+      height: 2.6vh;
+  }
+  
+  main .container .container-input label > i:hover{
+      color: var(--blueColor);
+  }
+  
+  main .container .container-input input:is(:hover, :focus){
+      border: 2px solid var(--shockPinkColor);
+      color: var(--shockPinkColor);
+  }
+ 
+  main .container .container-btn{
+    display: flex;
+    justify-content: center;
+  }
+
+  main .container .container-btn .container-btnBack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .container .container-btn .container-btnBack a{
+    text-decoration: none;
+    color: var(--whiteColor);
+  }
+
+  main .container .container-btn button,
+  main .container .container-btn .container-btnBack{
+      background-color: var(--darkColor);
+      border: 1px solid var(--blueColor);
+      color: var(--whiteColor);
+      border-radius: 10px;
+      width: 80px;
+      height: 30px;
+      margin: 5px;
+      transition: 0.6s ease-in-out;
+      font-size: 14px;
+      font-family: 'Mulish', sans-serif;
+  }
+
+  main .container .container-btn button:hover,
+  main .container .container-btn .container-btnBack:hover{
+      background-color: var(--shockPinkColor);
+      color: var(--whiteColor);
+      transition: 0.6s ease-in-out;
+    }
+    
+ 
+
+@media (max-width: 400px) {
+  
+  main .container{
+    width: 90%;
+    height: 30vh;
+    padding: 20px;
+  }
+
+  main .container .container-input input{
+    padding: 6px;
+    width: 80%;
+    height: 2.6vh;
+  }
+
+  main .container .container-title,
+  main .container .conetainer-input,
+  main .container .container-btn{
+      margin: 20px;
+  }
+
+}
